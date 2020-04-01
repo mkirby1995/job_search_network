@@ -7,7 +7,7 @@ from dash.dependencies import Input, Output
 
 # Imports from this application
 from app import app, server
-from pages import index, models, predictions
+from pages import index, network, applications
 
 
 navbar = dbc.NavbarSimple(

@@ -15,19 +15,20 @@ column1 = dbc.Col(
             ## So you want a job, eh?
             """
         ),
-        dcc.Link(dbc.Button('See More', color='primary'), href='/models')
     ],
     md=4,
 )
 
 column2 = dbc.Col(
     [
-        dcc.Markdown(
-            """
-
-            ## So you want a job, eh?
-            """
-        ),
+        dcc.Link(dbc.Button(
+            'ADD A JOB',
+            color = 'primary'),
+            href = 'link_to_listing'),
+        dcc.Link(dbc.Button(
+            'ADD A NETWORK NODE',
+            color = 'primary'),
+            href = 'link_to_listing')
     ]
 )
 
