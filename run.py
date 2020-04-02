@@ -7,7 +7,7 @@ from dash.dependencies import Input, Output
 
 # Imports from this application
 from app import app, server
-from pages import index, network, applications
+from pages import index, network, applications, new_app
 
 
 navbar = dbc.NavbarSimple(
@@ -60,6 +60,8 @@ def display_page(pathname):
         return network.layout
     elif pathname == '/applications':
         return applications.layout
+    elif pathname == '/new_app':
+        return new_app.layout
     else:
         return dcc.Markdown('## Page not found')
 
